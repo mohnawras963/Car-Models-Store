@@ -1,0 +1,13 @@
+[build]
+  command = "bash netlify-build.sh"
+  publish = "public"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
